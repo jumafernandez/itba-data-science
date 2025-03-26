@@ -1,7 +1,7 @@
 import requests
 
 # Se realiza una solicitud GET a la URL
-URL = 'https://raw.githubusercontent.com/jumafernandez/soco-web_scraping/main/data/encuentro-01/example-01.html'
+URL = 'https://raw.githubusercontent.com/jumafernandez/itba-data-science/main/web-scraping/data/ppt1-example-01.html'
 r = requests.get(URL)
 # Es posible desactivar potenciales redirecciones
 # r = requests.get('URL', allow_redirects=False)

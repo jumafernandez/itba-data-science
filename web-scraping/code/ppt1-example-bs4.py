@@ -2,12 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 
 # Se realiza una solicitud GET a la URL
-URL = 'https://raw.githubusercontent.com/jumafernandez/soco-web_scraping/main/data/example-bs4.html'
+URL = 'https://raw.githubusercontent.com/jumafernandez/itba-data-science/main/web-scraping/data/ppt1-example-bs4.html'
 r = requests.get(URL)
 
 # Paso a una variable el texto html
 html_content = r.text
-    
+
 soup = BeautifulSoup(html_content, 'html.parser')
 
 #print(soup)

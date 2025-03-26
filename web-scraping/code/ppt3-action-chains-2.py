@@ -7,7 +7,7 @@ import time
 driver = webdriver.Chrome()
 
 # Abrir la página web
-URL = "https://jumafernandez.github.io/soco-web_scraping/data/encuentro-03/drag-and-drop.html"
+URL = "https://jumafernandez.github.io/itba-data-science/web-scraping/data/ppt3-drag-and-drop.html"
 driver.get(URL)
 
 # Encontrar los elementos draggable y droppable

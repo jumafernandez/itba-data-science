@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 
 # Se debe pasar el protocolo completo en la URL (http, https, etc)
-URL = 'https://jumafernandez.github.io/soco-web_scraping/data/formulario.html'
+URL = 'https://jumafernandez.github.io/itba-data-science/web-scraping/data/formulario.html'
 driver.get(URL)
 
 # Localizo los input donde se debe ingresar la información

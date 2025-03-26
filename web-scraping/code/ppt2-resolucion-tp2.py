@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Chrome()
 
 # Cargar la página del formulario
-URL = 'https://jumafernandez.github.io/soco-web_scraping/data/formulario-tp.html'
+URL = 'https://jumafernandez.github.io/itba-data-science/web-scraping/data/formulario-tp.html'
 driver.get(URL)
 
 # Esperar a que el formulario se cargue completamente
