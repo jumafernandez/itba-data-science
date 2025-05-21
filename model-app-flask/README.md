@@ -83,7 +83,7 @@ Esta app muestra cómo llevar un modelo desde un notebook hasta una aplicación 
 3. [Prototipo visual (Streamlit)](https://iris-svm.streamlit.app/).
 4. Web real (Flask con formulario).
 5. API REST (Flask + JSON).
-6. Prueba externa (requests).
+6. Prueba externa (requests) (`test_api.py`).
 
 ---
 
