@@ -78,9 +78,9 @@ print(response.json())  # {'prediction': 'versicolor'}
 
 Esta app muestra cómo llevar un modelo desde un notebook hasta una aplicación real de forma incremental:
 
-1. Entrenamiento y guardado en notebook.
-2. Predicción en notebook.
-3. Prototipo visual (Streamlit).
+1. [Entrenamiento y guardado en notebook](https://colab.research.google.com/drive/1obfnUN9vHLPNcC6U_JmYhvHBTwBN7Af5).
+2. [Predicción en notebook](https://colab.research.google.com/drive/1bTmAV8yLe9W3GKpjs4FSvBW9X2uN0c36).
+3. [Prototipo visual (Streamlit)](https://iris-svm.streamlit.app/).
 4. Web real (Flask con formulario).
 5. API REST (Flask + JSON).
 6. Prueba externa (requests).
