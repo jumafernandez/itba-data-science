@@ -36,7 +36,7 @@ source .venv/bin/activate
 
 ## 2. Scripts de Playwright
 
-Se ejecutan desde la raíz del repositorio con el entorno activado. Los tres abren una
+Se ejecutan desde la raíz del repositorio con el entorno activado. Los cuatro abren una
 ventana de Chromium y muestran el resultado en la terminal.
 
 | Script | Qué hace |
@@ -44,17 +44,19 @@ ventana de Chromium y muestran el resultado en la terminal.
 | `playwright-01-primer-ejemplo.py` | Abre la tabla de tiendas, extrae el `h1` y lista las marcas. |
 | `playwright-02-interacciones-formulario.py` | Completa el formulario de inicio de sesión, hace clic en *Ingresar* y lee la respuesta. |
 | `playwright-03-resolucion-tp.py` | Resuelve el formulario del TP: lista los elementos con sus atributos, completa todos los campos y lee la respuesta. |
+| `playwright-04-esperas-automaticas.py` | Inicia sesión en una página que tarda 3 segundos en mostrar el saldo. No hay esperas programadas: Playwright espera solo a que aparezca el elemento. |
 
 ```bash
 python web-scraping/playwright-code/playwright-01-primer-ejemplo.py
 python web-scraping/playwright-code/playwright-02-interacciones-formulario.py
 python web-scraping/playwright-code/playwright-03-resolucion-tp.py
+python web-scraping/playwright-code/playwright-04-esperas-automaticas.py
 ```
 
 Todos usan la API síncrona (`sync_playwright`) y el bloque `with` que se ve en las diapositivas.
 `headless=False` muestra la ventana y `slow_mo=500` frena cada acción medio segundo para poder seguirla.
 
-## 3. Extracción asistida por un LLM (`playwright-04-mcp-openai.py`)
+## 3. Extracción asistida por un LLM (`playwright-05-mcp-openai.py`)
 
 Este script no controla el navegador directamente: le pide a un modelo de OpenAI que lo haga
 a través de un servidor MCP de Playwright. Hacen falta **tres terminales** y una clave de OpenAI.
@@ -80,7 +82,7 @@ usar `--domain <dominio>` y la URL no cambia entre corridas.
 
 ```bash
 export OPENAI_API_KEY=sk-...
-python web-scraping/playwright-code/playwright-04-mcp-openai.py
+python web-scraping/playwright-code/playwright-05-mcp-openai.py
 ```
 
 Se abre un Chrome que navega solo hasta la página pedida. En la terminal de ngrok se ven las
